@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+:root {
+    --heading: rgb(123, 123, 243);
+    --primary-color:#2394C5;
+    --gray-shade: #374151;
+    --offwhite: #E5E5E5;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Selecting Font */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+#Header {
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+}
+
+.txt {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Containers */
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+.container-fluid{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hero-image{
+    width: 50%;
+}
+
+hr{
+    margin: 2.3rem 0rem;
+}
+
+a{ 
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 0.3rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+
+ul>li {
+    display: inline;
+    padding: 0rem 0.5rem;
+    list-style: none;
+}
+
+ul>div>li {
+    list-style: none;
+}
+.whitecenter{
+    color:#000;
+    padding: 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.733);
+}
+.offwhitecenter{
+    color:#000;
+    letter-spacing: 2px;
+    padding: 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--offwhite);
+    border: 1px solid rgba(255, 255, 255, 0.733);
+}
+
+
+/* Link Section */
+
+.link-primary {
+    max-width: 183px;
+    background-color: var(--primary-color);
+    border-radius: 0.3rem;
+    color: white;
+    border: 2px solid rgb(10, 100, 136);
+    transition: all 0.4s ease-in-out;
+    padding: 15px;
+    
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+}
+
+
+/* Navigation tag */
+
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(315deg, #a4bfef 10%, var(--primary-color) 74%);
+    color: white;
+    box-shadow: 10px 10px 8px #b3afaff6;
+}
+
+ul.nav-items{
+    width: 80%;
+    text-align: right;
+    padding: 0;
+
+
+}
+
+.nav-brand {
+    padding: 1rem 5px;
+    text-align: left;
+    width: 10%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.nav-brand>span {
+    color: rgb(8, 72, 211);
+}
+
+.space-list {
+    padding: 2rem;
+}
+
+.x-padding>li {
+    display: block;
+    padding: 1rem;
+}
+
+.x-padding>li>p {
+    display: block;
+    padding: 1rem 0;
+}
+
+.x-padding>li>p {
+    letter-spacing: 0.1rem;
+}
+
+/* Hero  */
+
+.hero {
+    padding: 2rem;
+}
+
+.hero-image {
+    max-width: 700px;
+    width: 50%;
+    
+    display: block;
+    margin: 2rem auto 1rem auto;
+}
+
+.hero-heading {
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+
+.hero-heading>h2>span {
+    color: var(--heading);
+    margin: 0 0.5rem;
+}
+
+.hero>.hero-heading>h2 {
+    color: #aaa;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--offwhite);
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0rem;
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(315deg, #83aaee 10%, var(--primary-color) 64%);
+    border: 1px solid rgba(255, 255, 255, 0.733);
+}
+.link-secondary{
+    padding: 15px;
+
+}
+
+.link-primary:hover{
+    color:#ddd;
+    background: rgb(209, 104, 209);
+    font-size: 1.1rem;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
+/* blog section  */
+
+.blogfirst,.blogsecond,.blogthird{
+    background-color:#f5f5f7;
+    min-width: 700px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    color: rgb(39, 38, 38);
+}
+@media (max-width:501px){
+        *{
+            box-sizing: border-box;
+           
+        }
+
+    .navbar>.nav-brand{
+        font-size: 18px;
+    }
+    
+    .nav-items li a{
+        font-size: 14px;
+        padding: 0 1px;
+        letter-spacing: 1px;
+    }
+    .nav-items li{
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    p,li,a{
+        font-size: 10px;
+    }
+    .blogfirst{
+        width: 100%;
+    }
+}
