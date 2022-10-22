@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
 :root {
-    --heading: rgb(123, 123, 243);
+    --heading: rgb(70, 70, 225);
     --primary-color:#2394C5;
     --gray-shade: #374151;
     --offwhite: #E5E5E5;
 }
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 /* Selecting Font */
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0px;
 }
 
 #Header {
@@ -28,11 +27,11 @@ h1 {
 }
 
 .txt {
-    text-align: center;
+    text-align: justify;
 }
 
 .center {
-    text-align: center;
+    text-align: justify;
 }
 
 /* Containers */
@@ -40,13 +39,13 @@ h1 {
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 .container-fluid{
-    width: 1200px;
+    width: 1300px;
     height: auto;
-    margin: 0 auto;
+    margin: 0px;
 }
 
 .hero-image{
@@ -58,8 +57,8 @@ hr{
 }
 
 a{ 
-    color: white;
-    display: inline-block;
+    color: rgb(225, 136, 136);
+    display:block;
     text-decoration: none;
     padding: 0.5rem 0.3rem;
     letter-spacing: 0.2rem;
@@ -69,7 +68,7 @@ a{
 }
 
 ul>li {
-    display: inline;
+    display: flex;
     padding: 0rem 0.5rem;
     list-style: none;
 }
@@ -78,10 +77,10 @@ ul>div>li {
     list-style: none;
 }
 .whitecenter{
-    color:#000;
+    color: white;
     padding: 1rem 0rem;
     width: 100%;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 2px;
     border: 1px solid rgba(255, 255, 255, 0.733);
 }
@@ -120,7 +119,7 @@ ul>div>li {
 
 .navbar {
     background-color: var(--primary-color);
-    display: flex;
+    display:block;
     justify-content: space-between;
     background-image: linear-gradient(315deg, #a4bfef 10%, var(--primary-color) 74%);
     color: white;
@@ -128,7 +127,7 @@ ul>div>li {
 }
 
 ul.nav-items{
-    width: 80%;
+    width: 50%;
     text-align: right;
     padding: 0;
 
@@ -137,7 +136,7 @@ ul.nav-items{
 
 .nav-brand {
     padding: 1rem 5px;
-    text-align: left;
+    text-align: center;
     width: 10%;
     font-weight: 700;
     font-size: 1.5rem;
@@ -163,7 +162,7 @@ ul.nav-items{
 }
 
 .x-padding>li>p {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
 }
 
 /* Hero  */
@@ -211,7 +210,7 @@ ul.nav-items{
 
 .footer {
     background-color: var(--primary-color);
-    color: white;
+    color: black;
     padding: 1rem 0rem;
     margin-top: 3rem;
     width: 100%;
@@ -272,7 +271,7 @@ ul.nav-items{
         font-size: 1.4rem;
     }
     p,li,a{
-        font-size: 10px;
+        font-size: 20px;
     }
     .blogfirst{
         width: 100%;
